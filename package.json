@@ -1,0 +1,24 @@
+{
+  "name": "the-theme",
+  "version": "1.0.0",
+  "description": "It's my theming boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuiHuangIO/the-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RuiHuangIO/the-theme/issues"
+  },
+  "homepage": "https://github.com/RuiHuangIO/the-theme#readme",
+  "devDependencies": {
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
