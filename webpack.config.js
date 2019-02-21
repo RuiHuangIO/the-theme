@@ -8,6 +8,11 @@ module.exports = {
     filename: "[name].bundle.js"
   },
   devtool: "source-map",
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 9000
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "style.css",
