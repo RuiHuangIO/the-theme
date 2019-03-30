@@ -2,6 +2,7 @@ const path = require('path');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -16,6 +17,16 @@ module.exports = merge(common, {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({ filename: '[name].css' }),
+    new BrowserSyncPlugin(
+      {
+        host: 'localhost',
+        port: 3000,
+        proxy: 'http://localhost:8080/',
+      },
+      {
+        reload: false,
+      }
+    ),
   ],
   module: {
     rules: [
