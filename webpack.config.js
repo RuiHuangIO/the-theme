@@ -1,23 +1,23 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: ["./src/js/main.js", "./src/sass/the-theme.scss"],
+  entry: ['./src/js/main.js', './src/sass/the-theme.scss'],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].bundle.js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 9000,
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css",
-      chunkFilename: "[name].css"
-    })
+      filename: 'style.css',
+      chunkFilename: '[name].css',
+    }),
   ],
   module: {
     rules: [
@@ -25,23 +25,17 @@ module.exports = {
         test: /\.js$/,
         use: [
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
-              presets: ["@babel/preset-env"]
-            }
-          }
-        ]
+              presets: ['@babel/preset-env'],
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader"
-          },
-          "sass-loader"
-        ]
-      }
-    ]
-  }
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
 };
