@@ -1,1 +1,3 @@
-console.log("Hello There");
+import '../sass/the-theme.scss';
+
+console.log('hello from main');
