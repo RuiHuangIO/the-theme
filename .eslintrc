@@ -1,11 +1,19 @@
 {
-  "extends": ["wesbos"],
+  "extends": ["airbnb", "prettier"],
   "env": {
     "es6": true,
-    "browser": true
+    "browser": true,
+    "jquery": true
   },
+  "plugins": ["html", "prettier"],
   "rules": {
-    "no-console": 0
-  },
-  "plugins": ["html"]
+    "prettier/prettier": "error",
+    "no-console": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }
 }

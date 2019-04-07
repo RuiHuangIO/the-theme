@@ -1,1 +1,1 @@
-console.log('hello from vendor');
+console.log("hello from vendor");
