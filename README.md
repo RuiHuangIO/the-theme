@@ -4,10 +4,10 @@ It's my theming boilerplate
 
 ## Goals:
 
-- (✔️) Setting up WebPack 
+- (✔️) Setting up Webpack 
 - (✔️) Set up eslint-prettier
 - (✔️) Incorporate SCSS
 - (✔️) Stylelint
 - PostCSS
-- WepPack code splitting
+- Webpack code splitting
 - Focus on CSS performance when writing SCSS
