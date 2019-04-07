@@ -9,4 +9,3 @@ It's my theming boilerplate
 - (✔️) Incorporate SCSS
 - Stylelint
 - Focus on CSS performance when writing SCSS
-- Try Parcel
