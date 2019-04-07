@@ -5,18 +5,15 @@
     "browser": true,
     "jquery": true
   },
+  "plugins": ["html", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "no-console": 0,
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": true
       }
-    ],
-    "rules": {
-      "prettier/prettier": "error",
-      "no-console": 0
-    }
-  },
-  "plugins": ["html", "prettier"]
+    ]
+  }
 }
