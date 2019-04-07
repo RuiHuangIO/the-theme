@@ -4,8 +4,9 @@
   "description": "It's my theming boilerplate",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix ",
+    "eslint": "eslint src/**/*.js",
+    "eslint:fix": "eslint src/**/*.js --fix ",
+    "stylelint": "stylelint src/**/*.scss",
     "start": "webpack-dev-server  --config webpack.dev.js --progress --colors",
     "build": "webpack --config  webpack.prod.js --display-max-modules --display-error-details"
   },
@@ -50,6 +51,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-prettier": "^1.0.6",
     "stylelint-scss": "^3.5.4",
     "stylelint-selector-bem-pattern": "^2.1.0",
     "webpack": "^4.29.6",

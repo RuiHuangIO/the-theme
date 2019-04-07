@@ -5,9 +5,17 @@
     "browser": true,
     "jquery": true
   },
-  "plugins": ["html", "prettier"],
+  "parser": "babel-eslint",
+  "plugins": ["html", "prettier", "react-hooks"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80
+      }
+    ],
     "no-console": 0,
     "import/no-extraneous-dependencies": [
       "error",
