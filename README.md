@@ -7,5 +7,7 @@ It's my theming boilerplate
 - (✔️) Setting up WebPack 
 - (✔️) Set up eslint-prettier
 - (✔️) Incorporate SCSS
-- Stylelint
+- (✔️) Stylelint
+- PostCSS
+- WepPack code splitting
 - Focus on CSS performance when writing SCSS
